@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grid_view/tabone.dart' as tabone;
-import 'package:grid_view/tabtow.dart' as tabtow;
+import 'package:grid_view/TabOnee.dart' as tabone;
+import 'package:grid_view/Tabtow.dart' as tabtow;
 
 class Home extends StatefulWidget {
   @override
@@ -46,8 +46,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       body: TabBarView(
         controller: controller,
         children: [
-          tabtow.ContactTab(),
-          tabone.ImageTab(),
+          tabtow.ImageTab(),
+          tabone.ContactTab(),
         ],
 
       ),
